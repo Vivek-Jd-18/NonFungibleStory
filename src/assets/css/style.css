@@ -1,0 +1,229 @@
+@font-face {
+  font-family: "CourierPrime-Regular";
+  src: url("../fonts/CourierPrime-Regular.ttf");
+}
+@font-face {
+  font-family: "CourierPrime-Bold";
+  src: url("../fonts/CourierPrime-Bold.ttf");
+}
+@font-face {
+  font-family: "CourierPrime-BoldItalic";
+  src: url("../fonts/CourierPrime-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "CourierPrime-Italic";
+  src: url("../fonts/CourierPrime-Italic.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-family: "CourierPrime-Regular";
+  padding: 0;
+  margin: 0;
+  color: #442d23;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+.CourierPrimeBold {
+  font-family: "CourierPrime-Bold" !important;
+}
+.CourierPrimeBoldItalic {
+  font-family: "CourierPrime-BoldItalic" !important;
+}
+.CourierPrimeItalic {
+  font-family: "CourierPrime-Italic" !important;
+}
+.non-hero-bg {
+  background-image: url("../images/hero-bg.png");
+  min-height: 100vh;
+  background-size: cover;
+}
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 2px solid #442d23;
+  padding-top: 20px;
+  padding-bottom: 18.5px;
+  align-items: center;
+}
+.logo-col h6 {
+  font-size: 48px;
+  line-height: 62px;
+  font-family: "CourierPrime-Bold";
+  margin: 0;
+}
+.home-btn {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+.hero-row {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-50 {
+  flex: 0 0 50%;
+  width: 50%;
+  max-width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.hero-section {
+  padding-top: 85px;
+  padding-bottom: 76px;
+  min-height: calc(100vh - 170px);
+  display: flex;
+  align-items: center;
+}
+.hero-iframe {
+  width: 540px;
+  height: 412px;
+  object-fit: cover;
+}
+.hero-text {
+  font-size: 20.8px;
+  font-family: "CourierPrime-Bold";
+  line-height: 25px;
+
+  text-align: justify;
+}
+.hero-text-box {
+  padding-left: 23px;
+}
+.primary-btn {
+  background: #442d23;
+  color: #fff;
+  font-size: 23px;
+  font-family: "CourierPrime-Bold";
+  padding: 12px 25px;
+  border: 0;
+  cursor: pointer;
+}
+.footer-text {
+  margin-bottom: 14px;
+  font-style: 16px;
+  line-height: 21px;
+  font-family: "CourierPrime-Bold";
+  text-align: center;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+
+.footer-list li {
+  margin: 0 23px;
+}
+
+.footer-list li a {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #442d23;
+  font-family: "CourierPrime-Bold";
+  text-decoration: none !important;
+}
+
+.footer-list li img {
+  margin-right: 5px;
+}
+@media screen and (max-width: 992px) {
+  .hero-row {
+    flex-direction: column;
+  }
+  .col-50 {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .hero-text-box {
+    padding: 30px;
+  }
+  .logo-col h6 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-text-box {
+    padding-left: 0;
+    margin-top: 50px;
+  }
+
+  .hero-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer-list li {
+    margin: 6px 8px;
+  }
+
+  .logo-col h6 {
+    font-size: 20px;
+    line-height: initial;
+  }
+
+  .home-btn img {
+    height: 20px;
+  }
+  .hero-iframe {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.web3modal-modal-card {
+  width: 400px !important;
+  min-width: unset !important;
+  max-width: unset !important;
+  background-color: #f9f3e9 !important;
+  border-radius: 0% !important;
+}
+
+.web3modal-provider-container {
+  flex-direction: row !important;
+  background-color: #442d23 !important;
+  border-radius: 0% !important;
+}
+
+.web3modal-provider-description {
+  display: none;
+}
+
+.web3modal-provider-name{
+    color: #f9f3e9 !important;
+}
